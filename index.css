@@ -178,6 +178,7 @@ body {
 .main-container #kira {
   background-color: white;
   color: #48556a;
+  height: 100%;
 }
 
 .main-container #jeanette .graduate,
@@ -202,12 +203,13 @@ body {
   }
   body .main-container #kira {
     max-width: 540px;
+    height: auto;
   }
 }
 
 @media only screen and (max-width: 680px) {
   body .main-container {
-    gap: 24px;
+    gap: 0;
   }
   body .main-container .wide,
   body .main-container .thin {
@@ -224,7 +226,10 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 24px;
+    gap: 0;
+  }
+  body .main-container .component {
+    margin-bottom: 24px;
   }
 }
 /*# sourceMappingURL=index.css.map */
