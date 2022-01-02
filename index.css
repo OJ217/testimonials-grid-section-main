@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap");
+* {
+  margin: 0%;
+  padding: 0%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  min-height: 100vh;
+  background-color: #ecf2f8;
+}
+
+.main-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+
+.main-container .wide {
+  max-width: 540px;
+}
+
+.main-container .thin {
+  max-width: 255px;
+}
+
+.main-container .left-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 24px;
+}
+
+.main-container .left-container .left-component-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  gap: 30px;
+}
+
+.main-container .component {
+  padding: 30px;
+  font-size: 13px;
+  border-radius: 10px;
+  font-weight: 500;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+.main-container .component .profile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 12px;
+}
+
+.main-container .component .profile img {
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+}
+
+.main-container .component .quote {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+.main-container .component .review {
+  line-height: 1.4;
+}
+
+.main-container #daniel {
+  background-color: #7541c8;
+  background-image: url("./images/bg-pattern-quotation.svg");
+  background-repeat: no-repeat;
+  background-position: 82% 0%;
+  color: white;
+}
+
+.main-container #daniel img {
+  border: 2px solid #a478e7;
+}
+
+.main-container #daniel .graduate {
+  opacity: 50%;
+}
+
+.main-container #daniel .review {
+  opacity: 70%;
+}
+
+.main-container #jonathan {
+  background-color: #48556a;
+  color: white;
+}
+
+.main-container #jonathan .graduate {
+  opacity: 50%;
+}
+
+.main-container #jonathan .review {
+  opacity: 70%;
+}
+
+.main-container #patrick {
+  background-color: #19212e;
+  color: white;
+}
+
+.main-container #patrick img {
+  border: 2px solid #7541c8;
+}
+
+.main-container #patrick .graduate {
+  opacity: 50%;
+}
+
+.main-container #patrick .review {
+  opacity: 70%;
+}
+
+.main-container #jeanette,
+.main-container #kira {
+  background-color: white;
+  color: #48556a;
+}
+
+.main-container #jeanette .graduate,
+.main-container #kira .graduate {
+  opacity: 50%;
+}
+
+.main-container #jeanette .review,
+.main-container #kira .review {
+  opacity: 70%;
+}
+
+@media only screen and (max-width: 1160px) {
+  body {
+    padding: 70px 24px;
+  }
+  body .main-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .main-container #kira {
+    max-width: 540px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  body .main-container {
+    gap: 24px;
+  }
+  body .main-container .wide,
+  body .main-container .thin {
+    max-width: none;
+  }
+  body .main-container #kira {
+    max-width: none;
+  }
+  body .main-container .left-component-container {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 24px;
+  }
+}
+/*# sourceMappingURL=index.css.map */
